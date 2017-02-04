@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @message %></title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag 'hello', media: "all", type: "text/css" %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield :list %>
+    <%= yield %>
+  </body>
+
+  This is from the hello.html.erb file.
+
+</html>
